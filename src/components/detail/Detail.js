@@ -11,7 +11,7 @@ const Detail = () => {
     const todo = todo_list.filter((todo) => {
         return todo.id === Number(todo_id.id);
     }); 
-    console.log(todo)    
+       
     return(
         <div>
             <p>ID:{todo[0].id}</p>
