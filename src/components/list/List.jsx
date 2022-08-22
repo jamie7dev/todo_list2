@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 function List() {
   const todos = useSelector((state) => state.todos.todos );
   
-
+  console.log(todos)
   return (
     <div className="list-container">
       <h2 className="list-title">Working... 🔥</h2>

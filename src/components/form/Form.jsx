@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import "./style.css";
+import { useDispatch } from "react-redux";
+import {addTodo} from '../../redux/modules/Todo';
 
 let number = 3;
-function Form({ setTodos, todos }) {
+function Form() {
+  const dispatch = useDispatch();
+  
   const initialState = {
     id: 0,
     title: "",
@@ -10,7 +14,7 @@ function Form({ setTodos, todos }) {
     isDone: false,
   };
 
-  console.log(todos);
+  
 
   const [todo, setTodo] = useState(initialState);
   const onChangeHandler = (event) => {
@@ -21,7 +25,7 @@ function Form({ setTodos, todos }) {
   const onSubmitHandler = (event) => {
     event.preventDefault();
     if (todo.title.trim() === "" || todo.body.trim() === "") return;
-    setTodos([...todos, { ...todo, id: number }]);
+    dispatch(addTodo({...todo, id: number}));
     setTodo(initialState);
     number++;
   };

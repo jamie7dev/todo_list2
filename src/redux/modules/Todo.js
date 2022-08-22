@@ -32,13 +32,13 @@ export const changeTodo = (payload) => {
 const initialState = {
     todos:[
       {
-        id: "1",
+        id: 1,
         title: "리액트",
         body: "리액트를 배워봅시다",
         isDone: false,
       },
       {
-        id: "0",
+        id: 0,
         title: "",
         body: "",
         isDone: false,

@@ -14,10 +14,10 @@ const Detail = () => {
     console.log(todo)    
     return(
         <div>
-            <p>ID:{todo.id}</p>
+            <p>ID:{todo[0].id}</p>
             <button onClick={() => { navigate('/') }}>이전으로</button>
-            <h3>{todo.title}</h3>
-            <p>{todo.body}</p>
+            <h3>{todo[0].title}</h3>
+            <p>{todo[0].body}</p>
         </div>   
         
     );
