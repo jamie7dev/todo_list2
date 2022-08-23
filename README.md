@@ -1,3 +1,7 @@
-# 스파르타코딩클럽 항해 99 
+#inovation camp
+React#2 숙련 주차 과제 
 
-- React 기초 주차 과제
+Todo List의 상세페이지 만들기
+- style-componenets
+- router
+- redux
